@@ -19,3 +19,8 @@
    width: 100%;
    text-align: center;
 }
+
+.why-hr {
+    background-color: darkgoldenrod;
+    border: 5px solid darkgoldenrod;
+    }
