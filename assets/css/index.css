@@ -19,17 +19,17 @@
 .why-hr {
     background-color: darkgoldenrod;
     border: 5px solid darkgoldenrod;
-    }
+}
 
-    .split {
-        width: 100%;
-        background: red;
-    }
+.split {
+    width: 100%;
+    background: red;
+}
 
-    .benefits {
-        width: 60%;
-    }
+.benefits {
+    width: 60%;
+}
 
-    .quote {
-        width: 35%;
-    }
+.quote {
+    width: 35%;
+}
