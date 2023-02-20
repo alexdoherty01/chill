@@ -21,11 +21,14 @@
     border: 5px solid darkgoldenrod;
     }
 
-    
+    .split {
+        width: 100%;
+    }
+
     .benefits {
         width: 60%;
     }
 
     .quote {
-        width: 40%;
+        width: 35%;
     }
