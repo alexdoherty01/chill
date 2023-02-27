@@ -1,14 +1,81 @@
-.navbar {
-    color: red;
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 15px;
 }
 
-.img {
+html, body {
+    background-color: white;
+    font-size: 16px;
+    margin: 0 30px;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: white;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0 60px;
+    padding: 0;
+
+
+}
+
+nav li {
+    float: right;
+
+}
+
+nav .title {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%; 
+    text-align: center;
+    font-weight: bold;
+    float: left;
+
+}
+nav a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    color: gray;
+
+}
+nav a:hover {
+    background: lightgray;
 }
 
+
+
+#hero {
+    margin-top: 60px;
+    background-image: url("../img/herolandscape.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+
+}
+
+.hero-canvas {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.575);
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
 .why {
    background-color: gold;
    color: black;
