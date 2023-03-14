@@ -71,9 +71,7 @@ h1 {
     width: 100%;
     position: relative;
 
-    animation: heroImage;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
+    
 
 }
 
@@ -92,6 +90,9 @@ h1 {
     text-align: center;
     color: white;
     padding: 40px;
+    animation: heroImage;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 .hero-content p {
