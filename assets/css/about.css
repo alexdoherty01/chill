@@ -1,0 +1,50 @@
+/* about.css */
+
+* {
+    text-align: center;
+}
+
+#content {
+    margin-top: 65px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 80px;
+}
+
+p {
+    font-size: 14px;
+}
+
+.buttons {
+    margin: 0 auto;
+    width: 600px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.buttons a {
+    width: 33%;
+}
+
+.buttons button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #CCC;
+    color: white;
+    font-weight: bold;
+    background: royalblue;
+}
+
+.buttons button:hover {
+    background: #0000FF;
+    cursor: pointer;
+}

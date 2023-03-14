@@ -1,16 +1,20 @@
+/* main.css */
+
 * {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     line-height: 15px;
 }
 
 html, body {
-    background-color: white;
+    background-color: #f0f0f0;
     font-size: 16px;
     margin: 0 30px;
+    height: 100%;
 }
+
 nav {
     position: fixed;
-    top: 0;
+    top: 0; 
     left: 0;
     width: 100%;
     z-index: 100;
@@ -21,51 +25,63 @@ nav ul {
     list-style-type: none;
     margin: 0 60px;
     padding: 0;
-
-
-}
-
-nav li {
-    float: right;
-
+    overflow: hidden;
 }
 
 nav .title {
     display: block;
     text-align: center;
+    font-size: 25px;
     font-weight: bold;
-    float: left;
-
+    text-decoration: none;
 }
+  
+nav li {
+    float: right;
+}
+
 nav a {
     display: block;
+    color: #3a3a3a;
     text-align: center;
-    text-decoration: none;
     padding: 20px;
-    color: gray;
-
+    text-decoration: none;
 }
+
 nav a:hover {
-    background: lightgray;
+    background-color: #cfcfcf;
 }
 
+nav .left {
+    float: left;
+}
 
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
 
 #hero {
     margin-top: 60px;
-    background-image: url("../img/herolandscape.jpg");
+    background-image: url("../img/landscape.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%;
     height: 100%;
+    width: 100%;
+    position: relative;
+
+    animation: heroImage;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 
 }
 
-.hero-canvas {
-    width: 100%;
+.hero-overflow {
     height: 100%;
-    background: rgba(0, 0, 0, 0.575);
+    width: 100%;
+    background: rgba(0, 0, 0, 0.651);
+    overflow: hidden;
 }
 
 .hero-content {
@@ -75,28 +91,167 @@ nav a:hover {
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-}
-.why {
-   background-color: gold;
-   color: black;
-   width: 100%;
-   text-align: center;
+    padding: 40px;
 }
 
-.why-hr {
-    background-color: darkgoldenrod;
-    border: 5px solid darkgoldenrod;
+.hero-content p {
+    font-size: 20px;
+    margin: 0;
+    opacity: 0.4;
 }
 
-.split {
-    width: 100%;
-    background: red;
+.hero-content h1 {
+    font-size: 50px;
 }
 
-.benefits {
-    width: 60%;
+.hero-content a {
+    display: inline-block;
+    background-color: royalblue;
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
 }
 
-.quote {
-    width: 35%;
+.hero-content a:hover {
+    background-color: #cfcfcf;
+    transition-duration: 0.5s;
+}
+
+@keyframes heroImage {
+    0% {
+        scale: 1.01;
+    } 50% {
+        scale: 1.1;
+    } 100% {
+        scale: 1.01;
+    }
+}
+
+#whyus {
+    text-align: center;
+}
+
+#whyus h1 {
+    color: royalblue;
+    border-bottom: solid 1px royalblue;
+    padding: 0 25px;
+    padding-bottom: 25px;
+}
+
+.whyus-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 55px 0 ;
+}
+
+.whyus-content ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.whyus-content li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 10px 20px;
+}
+
+#benefits {
+    margin: 50px 0;
+    text-align: center;
+}
+
+#benefits h1 {
+    margin: 0;
+}
+
+.benefits-content {
+    background: lightblue;
+    height: 300px;
+    padding: 55px 0 ;
+}
+
+.benefits-left {
+    width: 33%;
+    float: left;
+}
+
+.benefits-left-header {
+    text-align: left;
+    border-bottom: solid 3px royalblue;
+    margin: 0px 80px;
+}
+
+.benefits-right {
+    width: 33%;
+    float: right;
+}
+
+.benefits-right-header {
+    text-align: right;
+    border-bottom: solid 3px royalblue;
+    margin: 0px 80px;
+}
+
+.benefits-center {
+    width: 33%;
+    margin: 0 auto;
+}
+
+.image-border {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.benefit-img {
+    height: 100%;
+    width: auto;
+    display: inline;
+    margin: 0 auto;
+    margin-left: -25%;
+}
+
+#didyouknow {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.didyouknow-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 55px 0;
+}
+
+.didyouknow-content span {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    float: left;
+    font-size: 350px;
+    color: royalblue
+}
+
+.didyouknow-text {
+    float: right;
+}
+
+.didyouknow-content h1 {
+    color: royalblue;
+    border-bottom: solid 1px royalblue;
+    padding-bottom: 25px;
+}
+
+footer {
+    margin: 50px 0;
+    text-align: center;
+    padding: 20px;
 }
